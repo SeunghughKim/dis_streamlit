@@ -17,7 +17,7 @@ if uploaded_file is not None:
     selected_column = st.selection("Select a column", df.columns)
     
     if df[selected_column].dtype == 'object':
-        category_counts = df[selected)column].value_counts(normalize=True)
+        category_counts = df[selected_column].value_counts(normalize=True)
         st.write("Proportions of each category level:")
         st,write(category_counts)
         
