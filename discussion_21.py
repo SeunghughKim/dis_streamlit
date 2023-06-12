@@ -5,7 +5,7 @@ import seaborn as sns
 
 uploaded_file = st.file_uploader("Upload a CSV file", type = "csv")
 
-if uploaded_file is not Nane:
+if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     
     st,write("Number of rows:", df.shape[0])
