@@ -28,8 +28,9 @@ if uploaded_file is not None:
         
     elif df[selected_column].dtype in ['int64', 'float64']:
         summary = df[selected_column].describe()
+        
         st.write("Five number Summary:")
-        st.write(summary)
+        st.table(summary[['min', '25%', '50%', '75%', 'max']])
         
         plt.figure(figsize=(10,6))
         sns.histplot(df[selected_column],kde=TRUE)
