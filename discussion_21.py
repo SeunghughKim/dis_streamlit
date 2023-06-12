@@ -19,7 +19,7 @@ if uploaded_file is not None:
     if df[selected_column].dtype == 'object':
         category_counts = df[selected_column].value_counts(normalize=True)
         st.write("Proportions of each category level:")
-        st,write(category_counts)
+        st.write(category_counts)
         
         plt.figure(figsize=(10,6))
         sns.countplot(x=selected_column, data=df)
