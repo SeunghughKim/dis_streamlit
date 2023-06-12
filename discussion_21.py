@@ -14,7 +14,7 @@ if uploaded_file is not None:
     st.write("Number of numerical variables:", len(df.select_dtypes(include='number').columns))
     st.write("Number of boolean variables:", len(df.select_dtypes(include='bool').columns))
 
-    selected_column = st.selection("Select a column", df.columns)
+    selected_column = st.selectbox("Select a column", df.columns)
     
     if df[selected_column].dtype == 'object':
         category_counts = df[selected_column].value_counts(normalize=True)
