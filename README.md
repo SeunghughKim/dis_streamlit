@@ -2,7 +2,9 @@
 
 Her is a link to the application
 
-[streamlit_application]https://seunghughkim-dis-streamlit-discussion-21-9ixyiq.streamlit.app/
+[streamlit_application][https://seunghughkim-dis-streamlit-discussion-21-9ixyiq.streamlit.app/]
+
+
 Have a file uploader button which allows you to upload your own csv file
 
 Once the csv file has been uploaded display relevant statistics about the dataset, such as: number of rows, number of columns, how many categorical/numerical/bool variables are there (other information you can think of, optional)
